@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test-time optimization redesign · Gabriela Pérez</title>
+  <meta name="description" content="Master's thesis case study: redesigning a test-time optimization tool for expert engineers at Advantest.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/ibm-plex-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="case">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../">Gabriela Pérez</a>
+      <a class="back" href="../">← Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="sec case-hero">
+      <div class="case-hero__text">
+        <p class="eyebrow">Master’s Thesis · May 2025 – May 2026</p>
+        <h1 class="h-display">(Re)designing a test-time optimization tool for expert engineers</h1>
+        <p class="body">A User-Centered Design project in collaboration with Advantest, one of the world’s leading semiconductor testing companies. Working with specialized users, I researched, designed and evaluated a redesigned feature that transforms passive data display into an active and guiding tool for test-time optimization.</p>
+        <dl class="meta"><div><dt>Company</dt><dd>Advantest</dd><dd>Böblingen, Germany</dd></div><div><dt>My role</dt><dd>UX Researcher &amp; UI Designer</dd></div><div><dt>Tools</dt><dd>Remote Interviews</dd><dd>Figma</dd><dd>Heuristic evaluation</dd></div><div><dt>Duration</dt><dd>8 months (contract) 12 months (thesis)</dd></div></dl>
+      </div>
+      <div class="case-hero__media"><img src="../assets/img/testtime-hero.webp" alt="Illustration of semiconductor test equipment" width="309" height="278"></div>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow">01 - OVERVIEW</p>
+      <h2 class="h-section">The Challenge</h2>
+      <p class="body">Test-time optimization is a highly specialized task performed by a very small global community (roughly 100 engineers worldwide). The existing software tools, known as the TP360 and “Test Time View”, showed engineers raw test-time data and hierarchy. But it was passive: it displayed information but was not helping users make sense of it. Engineers had to manually hunt for optimization opportunities across fragmented views, each following their own path through the software.</p>
+      <div class="duo">
+        <div class="box"><span class="eyebrow">PROBLEM</span><h3>A fragmented workflow, passive role in a high-stakes environment</h3><p class="note">The existing feature showed data but offered no structure, no concurrency visualization and no guidance. Every engineer developed their own workaround, a sign of a tool that was not meeting real needs.</p></div>
+        <div class="box"><span class="eyebrow">GOAL</span><h3>Designing a feature using a UCD process</h3><p class="note">Apply User-Centered Design in an industrial context to create a unified, active tool that reduces investigation time without replacing the engineers’ expertise and judgment.</p></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow">02 - PROCESS</p>
+      <h2 class="h-section">Steps Taken</h2>
+      <ol class="steps steps--6" style="--n:6"><li><span class="steps__num">1</span><h3>User research</h3><p class="note">Remote video interviews with a “show me by doing” approach with 9 engineers</p></li><li><span class="steps__num">2</span><h3>Synthesis</h3><p class="note">Requirements definition from research findings.</p><p class="note">Userflow optimization.</p></li><li><span class="steps__num">3</span><h3>Ideation</h3><p class="note">Exploration of the concept in other fields. Sketches creation.</p></li><li><span class="steps__num">4</span><h3>Validation</h3><p class="note">Review session of the sketches with stakeholders close to the task (developers and engineers)</p></li><li><span class="steps__num">5</span><h3>Hi-fi prototype</h3><p class="note">Full prototype design in Figma</p></li><li><span class="steps__num">6</span><h3>Expert review</h3><p class="note">Evaluation of the prototype against Nielsen’s heuristics and Gestalt principles</p></li></ol>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow">03 - RESEARCH</p>
+      <h2 class="h-section">Understanding a specialized workflow</h2>
+      <p class="body">With only around 100 engineers spread across the world performing this task, access to participants was challenging. I conducted 9 remote video interviews with questions that could not only be answered verbally but that could follow a “show me by doing” approach. I asked engineers to walk me through how they actually performed the task in their own environment. This method revealed far more than standard interviews would have.</p>
+      <figure class="figure figure--research"><img src="../assets/img/testtime-research.webp" alt="Overview of the research: interview approach and findings" width="1440" height="1718" loading="lazy"></figure>
+      <div class="trio">
+        <div class="box"><span class="eyebrow">KEY INSIGHT 1</span><h3>Fragmented tool usage</h3><p class="note">Every engineer had developed their own workaround workflow. There was a partial shared mental model of how to approach the task.</p></div>
+        <div class="box"><span class="eyebrow">KEY INSIGHT 2</span><h3>Concurrency was invisible</h3><p class="note">The existing feature showed time data and hierarchy but never visualized process concurrency: the thing engineers needed to spot some optimization opportunities</p></div>
+        <div class="box"><span class="eyebrow">KEY INSIGHT 3</span><h3>Manual investigation</h3><p class="note">Engineers were jumping between multiple views across the software searching for data, consuming significant time before any real analysis could begin.</p></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow">04 - DESIGN</p>
+      <h2 class="h-section">A tool that guides, points and explains - without replacing judgment</h2>
+      <p class="body">The redesigned feature combines a visualization panel and a data table into a single unified view. For the first time, engineers can see test time data, hierarchy and execution thread concurrency all in one place. In addition, the tool now actively marks potential optimization sections, surfacing opportunities that previously required manual investigation, so that deep analysis only happens when it’s truly needed.</p>
+      <p class="body">The goal was never to catch every possible optimization problem or to automate the engineers’ expertise away. It was to cut down investigation time and let human judgment focus where it matters most. This is a fundamental principle of designing for expert users: you are not simplifying, you are restructuring information so that expertise can be applied more effectively.</p>
+      <figure class="figure figure--center"><video src="../assets/video/testtime-sketching.mp4" autoplay loop muted playsinline preload="metadata"></video><figcaption>Sketching phase</figcaption></figure>
+      <figure class="figure figure--center" style="margin-top:0"><video src="../assets/video/testtime-prototype.mp4" autoplay loop muted playsinline preload="metadata"></video><figcaption>Prototype</figcaption></figure>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow">05 - OUTCOMES</p>
+      <h2 class="h-section">Results and Impact</h2>
+      <div class="outcomes"><div class="outcome"><b>9</b><span>Specialist engineers interviewed from a global pool of ~100</span></div><div class="outcome"><b>1</b><span>Unified tool replacing fragmented tool use</span></div><div class="outcome"><b>3</b><span>Methods: User Interviews, Stakeholder review, Expert review</span></div></div>
+      <div class="learned"><span class="eyebrow">WHAT I LEARNED</span><p>Applying UCD in industry is never as clean as the textbooks describe. I learned that sketches can be perceived as final prototypes, and that expectation management is as much a part of the design role as the design itself. Working with engineering teams taught me to communicate design decisions also with technical language, and to earn trust before introducing new ways of thinking.</p><p>The deepest lesson was about the nature of UX/UI in industry itself: designing for expert users is not about making things more aesthetic, it is about restructuring information so that expertise can be applied in a better way. That distinction between simplification and restructuring is something I will carry into every complex design problem I work on.</p></div>
+    </section>
+
+    <section class="sec more">
+      <p class="eyebrow">NEXT</p>
+      <h2 class="h-section" style="margin-top:16px">More Projects</h2>
+      <div class="cards">
+      <a class="pcard" href="../project-advantest-usability/">
+        <span class="pcard__label">Advantest</span>
+        <span class="pcard__title">Usability review of software</span>
+        <span class="pcard__tags">HCI Research · Usability evaluation · Expert review</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="pcard" href="../project-deskbird-bauhaus/">
+        <span class="pcard__label">Deskbird x Bauhaus</span>
+        <span class="pcard__title">New product feature UI design</span>
+        <span class="pcard__tags">User Research · UI Design · Prototyping</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="pcard" href="../kitchen-and-more-stuff/">
+        <span class="pcard__label">Self project</span>
+        <span class="pcard__title">Web page construction with AI support</span>
+        <span class="pcard__tags">UI Design · AI Prototyping</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="brand" href="../">Gabriela Pérez</a>
+      <small>© 2026 · Designed in Figma</small>
+      <nav aria-label="Footer">
+        <a href="../contact/">Contact</a>
+        <a href="https://linkedin.com/in/gabrielarosalbap/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

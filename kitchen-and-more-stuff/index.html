@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen and more stuff · Gabriela Pérez</title>
+  <meta name="description" content="Side project: a bilingual, mobile-first one-page marketplace designed in Figma and built with HTML/CSS and Claude Code.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/ibm-plex-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="case">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../">Gabriela Pérez</a>
+      <a class="back" href="../">← Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="sec case-hero">
+      <div class="case-hero__text">
+        <p class="eyebrow">Side Project · Sept 2026</p>
+        <h1 class="h-display">Kitchen and more stuff</h1>
+        <p class="body">A one-page marketplace I built to sell my kitchen things before moving. Bilingual (EN/DE), mobile-first and designed to be dropped into university group chats instead of spamming them with photos.</p>
+        <dl class="meta"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>My role</dt><dd>Design &amp; Build</dd></div><div><dt>Tools</dt><dd>HTML/CSS</dd><dd>Claude Code</dd><dd>GitHub Pages</dd><dd>Figma</dd></div><div><dt>Timeline</dt><dd>1 day</dd></div></dl>
+      </div>
+      <div class="case-hero__media k-hero-media">
+        <img src="../assets/img/kitchen-hero.webp" alt="Mobile view of the Kitchen and more stuff site" width="262" height="422">
+        <a class="pill pill--plex" href="https://gabrielarosalba.github.io/Selling_stuff/" target="_blank" rel="noopener">Go to website →</a>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="h-section">A few decisions</h2>
+      <div class="decision" style="margin-top:55px">
+        <p class="body"><strong>Bilingual everywhere.</strong> My buyers are a mix of international students and German locals, and making either group translate a listing adds more work and time to a 2-euro decision.</p>
+        <div class="phone"><video src="../assets/video/kitchen-scroll.mp4" autoplay loop muted playsinline preload="metadata"></video></div>
+      </div>
+      <div class="decision" style="margin-top:83px">
+        <div>
+          <p class="body"><strong>The “Ask about item” button opens a pre-written bilingual message with the item name and price</strong>, so buyers don’t have to type anything (Recognition rather than Recall)</p>
+          <p class="body"><strong>Telegram instead of WhatsApp or a form</strong>, to keep my phone number private.</p>
+        </div>
+        <img class="decision__img" src="../assets/img/kitchen-telegram.webp" alt="Pre-written bilingual message in Telegram" width="400" height="644" loading="lazy">
+      </div>
+      <div class="decision decision--wide" style="margin-top:80px">
+        <div>
+          <p class="body"><strong>Sold items disappear. Reserved items stay visible</strong> with a status label, since Reserved sometimes falls through; keeping it listed means the next person can still ask.</p>
+          <p class="body"><strong>No cart, no checkouts, no accounts</strong> since it would have been an overhead for a handful of items sold to people picking them up in person.</p>
+        </div>
+        <img class="decision__img" src="../assets/img/kitchen-admin.webp" alt="Item list with Reserved label and the admin view" loading="lazy" style="border-radius:0">
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="build">
+        <h2 class="h-section">On the build..</h2>
+        <p class="body">I sketched the layout in Figma first, then built it in a day with Claude Code, partly to see what I could and couldn’t do with it. The interesting limit was: live updates would have meant a database, so instead I update items through an admin view and commit the exported HTML... good enough for this volume, also allowing me to upload them slowly. This was a reminder that the right amount of infrastructure is usually less than it first looks.</p>
+        <div class="build__row">
+          <img src="../assets/img/kitchen-figma.webp" alt="Layout sketched in Figma" loading="lazy">
+          <img class="arrow" src="../assets/img/kitchen-arrow.svg" alt="" loading="lazy">
+          <img src="../assets/img/kitchen-built.webp" alt="The built website" loading="lazy">
+        </div>
+        <p class="body" style="margin-top:0">Still a work in progress. I keep finding responsive edge cases and fixing them as they come up.</p>
+      </div>
+      <div class="center"><a class="pill pill--plex" style="height:32px" href="https://gabrielarosalba.github.io/Selling_stuff/" target="_blank" rel="noopener">Go to website →</a></div>
+    </section>
+
+    <section class="sec more">
+      <p class="eyebrow">NEXT</p>
+      <h2 class="h-section" style="margin-top:16px">More Projects</h2>
+      <div class="cards">
+      <a class="pcard" href="../project-advantest-testtime/">
+        <span class="pcard__label">Advantest</span>
+        <span class="pcard__title">Test-time optimization software redesign</span>
+        <span class="pcard__tags">UCD · Hi-fi prototype · Heuristic evaluation</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="pcard" href="../project-advantest-usability/">
+        <span class="pcard__label">Advantest</span>
+        <span class="pcard__title">Usability review of software</span>
+        <span class="pcard__tags">HCI Research · Usability evaluation · Expert review</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="pcard" href="../project-deskbird-bauhaus/">
+        <span class="pcard__label">Deskbird x Bauhaus</span>
+        <span class="pcard__title">New product feature UI design</span>
+        <span class="pcard__tags">User Research · UI Design · Prototyping</span>
+        <span class="pcard__arrow" aria-hidden="true">→</span>
+      </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="brand" href="../">Gabriela Pérez</a>
+      <small>© 2026 · Designed in Figma</small>
+      <nav aria-label="Footer">
+        <a href="../contact/">Contact</a>
+        <a href="https://linkedin.com/in/gabrielarosalbap/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

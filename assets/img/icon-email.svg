@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="36" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 36 36" width="36">
+<g id="Frame 45">
+<rect fill="var(--fill-0, #1B1A19)" height="36" rx="8" width="36"/>
+<g id="Frame">
+<g id="SVGRepo_iconCarrier">
+<path d="M10 13.0001L16.2 17.65C17.2667 18.45 18.7333 18.45 19.8 17.65L26 13" id="Vector" stroke="var(--stroke-0, white)" stroke-linecap="round" stroke-width="2"/>
+<path d="M25 11H11C9.89543 11 9 11.8954 9 13V23C9 24.1046 9.89543 25 11 25H25C26.1046 25 27 24.1046 27 23V13C27 11.8954 26.1046 11 25 11Z" id="Vector_2" stroke="var(--stroke-0, white)" stroke-linecap="round" stroke-width="2"/>
+</g>
+</g>
+</g>
+</svg>
